@@ -1,30 +1,11 @@
-// Acumulador
-// Descrição
-// Escreva uma função chamada acumular que recebe num como parâmetro e soma todos os números positivos de 1 até num.
-// A função deve retornar o resultado desta soma.
+// Escreva uma função chamada abrevNome que:
 
-// Obs: O parâmetro num sempre será um número inteiro positivo!
+// - Recebe o nome de uma pessoa (duas ou mais palavras separadas por espaço)
+// - Retorna as iniciais do nome recebido, em maiúsculo, com um "." separando-as
 
-// Exemplos
-// Entrada: 2
-// # 1 + 2
-// Saída: 3 
-
-// Entrada: 8
-// # 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
-// Saída: 36 
-
-
-function acumular (num) {
-    //Insira seu código aqui!
-    
-    let i = 1;
-    let soma = 0;
-    
-    while(i <= num) {
+function abrevNome(nome) {
+  
+    return  nome.split(' ').map((primeiraLetra) => primeiraLetra[0]).join('.').toUpperCase('');
       
-      soma = soma + i;
-      i++
-  }
-    return soma;
-  }
+}
+    
